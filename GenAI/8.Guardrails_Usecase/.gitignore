@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Generated indexes and uploads
+faiss_index/
+faiss_store/
+uploads/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv*/
