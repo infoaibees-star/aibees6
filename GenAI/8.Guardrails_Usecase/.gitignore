@@ -4,7 +4,6 @@
 # Generated indexes and uploads
 faiss_index/
 faiss_store/
-uploads/
 
 # Python
 __pycache__/
