@@ -54,3 +54,16 @@ uv add faiss-cpu==1.11.0  # FAISS vector similarity search
 uv add langchain-text-splitters==0.3.9 # RecursiveCharacterTextSplitter
 uv add langchain-experimental # ---> To test semantic chunking splitter
 uv add tiktoken ---> To test TokenTextSplitter
+
+
+## Similarity Evaluation
+uv add nltk==3.9.2
+uv add rouge-score==0.1.2
+uv add bert-score==0.3.13
+uv add sentence-transformers==5.1.2
+
+## RAG Evaluation Libraries
+uv add ragas==0.4.3
+uv add datasets==4.0.0
+uv add deepeval==3.8.9
+uv add google-genai # required for deepeval

@@ -2,3 +2,5 @@
 .env
 __pycache__
 faiss_store
+summary_evaluation_results.json
+.deepeval

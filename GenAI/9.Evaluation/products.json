@@ -1,0 +1,102 @@
+[
+  {
+    "product_id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "description": "Experience high-quality sound without the wires. These Bluetooth headphones offer 20 hours of battery life, noise cancellation, and a comfortable over-ear design."
+  },
+  {
+    "product_id": 2,
+    "name": "Smart Fitness Tracker",
+    "description": "Track your steps, heart rate, sleep patterns, and more with this water-resistant smart fitness band. Includes mobile app integration and up to 7-day battery life."
+  },
+  {
+    "product_id": 3,
+    "name": "4K Ultra HD Smart TV",
+    "description": "Immerse yourself in vivid picture quality with this 55-inch 4K UHD Smart TV. Features voice control, multiple streaming apps, and HDR10 support."
+  },
+  {
+    "product_id": 4,
+    "name": "Robot Vacuum Cleaner",
+    "description": "A robotic vacuum with smart navigation, automatic recharging, and support for voice assistants. Ideal for pet hair and hardwood floors."
+  },
+  {
+    "product_id": 5,
+    "name": "Air Fryer",
+    "description": "Cook your favorite meals with less oil using this 5-liter digital air fryer. It comes with pre-set functions, temperature control, and an easy-to-clean basket."
+  },
+  {
+    "product_id": 6,
+    "name": "Portable Projector",
+    "description": "Compact projector with 1080p support, built-in speakers, and HDMI input. Perfect for movies, presentations, and gaming on the go."
+  },
+  {
+    "product_id": 7,
+    "name": "Electric Toothbrush",
+    "description": "Rechargeable toothbrush with multiple brushing modes, a two-minute timer, and a pressure sensor to ensure effective oral hygiene."
+  },
+  {
+    "product_id": 8,
+    "name": "Noise Cancelling Earbuds",
+    "description": "Wireless earbuds with active noise cancellation, touch controls, and a charging case that offers up to 24 hours of total playtime."
+  },
+  {
+    "product_id": 9,
+    "name": "Ergonomic Office Chair",
+    "description": "Mesh office chair with adjustable lumbar support, headrest, and 360-degree swivel. Designed to improve posture and reduce back pain."
+  },
+  {
+    "product_id": 10,
+    "name": "Instant Coffee Maker",
+    "description": "Single-serve coffee machine with fast brewing technology, reusable filter, and a sleek, compact design suitable for small kitchens or offices."
+  },
+  {
+    "product_id": 11,
+    "name": "Smart Home Security Camera",
+    "description": "Indoor/outdoor WiFi camera with night vision, motion detection, cloud storage, and mobile alerts for real-time security monitoring."
+  },
+  {
+    "product_id": 12,
+    "name": "Portable Power Bank",
+    "description": "10,000mAh fast-charging power bank with USB-C and USB-A ports. Lightweight and airplane-friendly for convenient travel charging."
+  },
+  {
+    "product_id": 13,
+    "name": "Digital Drawing Tablet",
+    "description": "Graphics tablet with pen pressure sensitivity, customizable buttons, and compatibility with major design software like Photoshop and Illustrator."
+  },
+  {
+    "product_id": 14,
+    "name": "Water Purifier",
+    "description": "RO+UV water purifier with advanced filtration, mineral booster, and smart filter change indicators. Ideal for home and office use."
+  },
+  {
+    "product_id": 15,
+    "name": "Smart Light Bulb",
+    "description": "WiFi-enabled LED bulb that supports voice control, scheduling, and millions of colors. Works with Alexa and Google Assistant."
+  },
+  {
+    "product_id": 16,
+    "name": "Cordless Hair Trimmer",
+    "description": "Rechargeable trimmer with multiple length settings, stainless steel blades, and a long-lasting battery. Suitable for beard and hair styling."
+  },
+  {
+    "product_id": 17,
+    "name": "Laptop Cooling Pad",
+    "description": "Slim cooling pad with silent fans, adjustable height settings, and blue LED lights to enhance airflow and laptop performance."
+  },
+  {
+    "product_id": 18,
+    "name": "Kitchen Stand Mixer",
+    "description": "Powerful stand mixer with stainless steel bowl, multiple speed settings, and attachments for kneading, mixing, and whisking."
+  },
+  {
+    "product_id": 19,
+    "name": "Wireless Charging Pad",
+    "description": "Qi-certified fast wireless charger with anti-slip surface, LED indicators, and support for iPhones, Android, and other compatible devices."
+  },
+  {
+    "product_id": 20,
+    "name": "Smart Thermostat",
+    "description": "Energy-saving thermostat with remote app control, learning behavior patterns, and integration with smart home systems."
+  }
+]
