@@ -1,0 +1,20 @@
+# Enterprise RAG Pipeline — Python dependencies
+#Create separate virtual environment for this project
+# Install: pip install -r requirements.txt
+
+# Google Cloud
+google-cloud-aiplatform>=1.70.0
+google-cloud-storage>=2.16.0
+
+# LangChain — sub-packages only (avoids langchain.chains fragmentation)
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-google-vertexai>=3.2.0
+langchain-google-genai>=2.1.0
+
+# PDF parsing
+pypdf>=4.0.0
+
+# .env file support
+python-dotenv>=1.0.0

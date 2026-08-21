@@ -1,0 +1,7 @@
+# Streamlit Configuration Placeholder
+# Theme configuration will be added here later
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
