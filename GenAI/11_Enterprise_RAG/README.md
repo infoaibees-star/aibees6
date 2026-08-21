@@ -7,7 +7,7 @@ This directory contains the production-ready, deployable version of the Vertex A
 ## 1. Directory Layout
 
 ```text
-v2/
+11_Enterprise_RAG/
 ├── spec.md                     # Design specification document
 ├── plan.md                     # Implementation task tracker
 ├── README.md                   # This deployment & runtime operator guide
@@ -34,15 +34,16 @@ v2/
 
 ## 2. Environment Variables Reference
 
+## 2.1 - Please go to setup\config.py and do the changes.. Below values are just a sample
 | Variable Name | Purpose | Required By | Example Value |
 | :--- | :--- | :---: | :--- |
-| `PROJECT_ID` | GCP Project ID | Setup, Backend | `project-f1be597b-8476-45ad-a2b` |
+| `PROJECT_ID` | GCP Project ID | Setup, Backend | `project-f1be597b` |
 | `REGION` | GCP Resource Region | Setup, Backend | `us-central1` |
-| `SOURCE_BUCKET`| GCS Bucket for raw PDFs | Setup | `aib6-raw-pdfs` |
+| `SOURCE_BUCKET`| GCS Bucket for raw PDFs | Setup | `XXXX-pdfs` |
 | `PDF_PREFIX` | Directory inside SOURCE_BUCKET | Setup | `pdfs/` |
-| `EMBED_BUCKET` | GCS Bucket for vector index artefacts | Setup, Backend | `aib-embeddings-0821` |
-| `INDEX_ID` | Resource name / ID of the Vector index | Backend, Setup | `284759201948` (Auto-generated in Step 2) |
-| `ENDPOINT_ID` | Resource name / ID of the index Endpoint | Backend, Setup | `482910485729` (Auto-generated in Step 2) |
+| `EMBED_BUCKET` | GCS Bucket for vector index artefacts | Setup, Backend | `enddding_folder_{name}` |
+| `INDEX_ID` | Resource name / ID of the Vector index | Backend, Setup | `111111` (Auto-generated in Step 2) |
+| `ENDPOINT_ID` | Resource name / ID of the index Endpoint | Backend, Setup | `48292222210485729` (Auto-generated in Step 2) |
 | `BACKEND_URL` | Base HTTP endpoint of Backend service | Frontend | `https://backend-service-abc-uc.a.run.app` |
 | `PORT` | Local or Cloud Run container network port | Backend, Frontend | `8080` (Default) |
 
@@ -51,9 +52,9 @@ v2/
 ## 3. Deployment Workflow & Setup Handoff
 
 ### Step 1: Run the Setup Pipeline
-Navigate to `v2/setup/` and set up your local workspace environment:
+Navigate to `11_Enterprise_RAG/setup/` and set up your local workspace environment:
 ```bash
-cd v2/setup
+cd 11_Enterprise_RAG/setup
 cp .env.example .env
 # Edit .env and supply your PROJECT_ID and other options
 ```
@@ -101,7 +102,7 @@ python step_04_query.py --question "Who should use Aspirin?"
 # backend:
 
 
-   1 cd ~/usecase_2/Enterprise_RAG/v2/backend {please replace with your actual 'backend' path}
+   1 cd ~/11_Enterprise_RAG/backend {please replace with your actual 'backend' path}
    
    2 python3 -m venv .venv && source .venv/bin/activate
    3 pip install -r requirements.txt
@@ -114,7 +115,7 @@ Run and Test the Completed app_v2.py Locally:
 
   Open a JupyterLab Terminal tab and launch your new frontend:
 
-   1 cd ~/usecase_2/Enterprise_RAG/v2/frontend {please replace with your actual frontend path}
+   1 cd ~/11_Enterprise_RAG/frontend {please replace with your actual frontend path}
    
    2 python3 -m venv .venv && source .venv/bin/activate
    3 pip install -r requirements.txt
@@ -192,7 +193,7 @@ To test the containerization setup locally before deploying, you can spin up the
 
 ### Run Backend Locally
 ```bash
-cd v2/backend
+cd 11_Enterprise_RAG/backend
 docker build -t enterprise-rag-backend .
 
 docker run -p 8080:8080 \
@@ -203,7 +204,7 @@ docker run -p 8080:8080 \
 
 ### Run Frontend Locally
 ```bash
-cd v2/frontend
+cd 11_Enterprise_RAG/frontend
 docker build -t enterprise-rag-frontend .
 
 docker run -p 8501:8501 \
@@ -220,7 +221,7 @@ And access it at `http://localhost:8501`.
   First, we deploy your FastAPI backend so it can handle database vector searches securely:
 
    1 # 1. Navigate to your backend directory
-   2 cd ~/usecase_2/Enterprise_RAG/v2/backend
+   2 cd ~/11_Enterprise_RAG/backend
    3
    4 # 2. Deploy to Cloud Run using your active configurations
    5 gcloud run deploy enterprise-rag-backend \
@@ -236,7 +237,7 @@ And access it at `http://localhost:8501`.
   Next, deploy your polished Streamlit frontend and point it directly to your newly deployed backend URL:
 
    1 # 1. Navigate to your frontend directory
-   2 cd ~/usecase_2/Enterprise_RAG/v2/frontend
+   2 cd ~/11_Enterprise_RAG/frontend
    3
    4 # 2. Deploy to Cloud Run, pasting your Backend Service URL below
    5 gcloud run deploy medi-bee-frontend \
